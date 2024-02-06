@@ -3,7 +3,7 @@ body, html{
     padding: 0px;
 }
 #parent {
-    background-image:url("/assets/img/cover\ 1.jpg");
+    background-image:url("/html_resume/assets/img/cover\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #f0eded;
@@ -32,7 +32,7 @@ body, html{
 }
 #profileimage{
     background-color: black;
-    background-image: url("/assets/img/diether.jpg");
+    background-image: url("/html_resume/assets/img/diether.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

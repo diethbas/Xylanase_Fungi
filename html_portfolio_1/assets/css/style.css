@@ -327,3 +327,46 @@ a {
     color: #211522;
     text-align: center;
 }
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #211522;
+    color: #D3B1C2;
+}
+
+#contactus + .sub-header + .con > .content-me {
+    padding: 20px;
+    background-color: #211522;
+    border-radius: 10px;
+}
+
+.contact-sub {
+    margin-bottom: 10px;
+    display: flex;
+}
+form {
+    width: 500px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    width: 80px;
+    display: inline-block;
+    color:#D3B1C2;
+}
+
+.submit {
+    width: 470px;
+    padding: 10px;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+}
+select {
+    width: 213px;
+    padding: 5px;
+}

@@ -26,7 +26,9 @@
                     </a>
                 </nav>
                 <nav class="menu"> 
-                    Contact Us
+                    <a class="produ" href="#contactus">
+                        Contact Us
+                    </a>
                 </nav>
             </div>
             <section class="search-section">
@@ -42,7 +44,7 @@
                         </li>
                         <li>
                             <a href="#multimoulds">
-                                Multicellular filamentous moulds
+                                Multicellular filamentous molds
                             </a>
                         </li>
                         <li>
@@ -120,7 +122,7 @@
                     </div>
                     <div class="div-link" id="multimoulds"></div>
                     <div class="subtype">
-                        Multicellular filamentous moulds
+                        Multicellular filamentous molds
                     </div>
                     <div class="subcontent"> 
                         Multicellular filamentous molds are characterized by their intricate hyphal networks, which extend and intertwine to form visible colonies on substrates. These molds thrive in diverse environments, exploiting organic matter for nutrients while releasing enzymes to break down complex molecules.
@@ -169,7 +171,7 @@
                             <p>TWB Agar Powder</p>
                             <p>500 grams</p>
                             <p>PHP 3,000.00</p>
-                            <p><a href="#contactus">Inquire</a></p>
+                            <p><a class="inq" href="#contactus">Inquire</a></p>
                         </div>  
                         <div class="desc-line"> </div>
                         <div class="desc">
@@ -182,7 +184,7 @@
                             <p>TWB Petri  Plates</p>
                             <p>12 pcs</p>
                             <p>PHP 1,000.00</p>
-                            <p><a href="#contactus">Inquire</a></p>
+                            <p><a class="inq" href="#contactus">Inquire</a></p>
                         </div>  
                         <div class="desc-line"> </div>
                         <div class="desc">
@@ -192,10 +194,10 @@
                     <div class="product">
                         <img id="lacto" src="assets/imge/lacto.png">
                         <div class="desc">
-                            <p>MOW Lactophenol Cotton Blue</p>
+                            <p>TWB Lactophenol Cotton Blue</p>
                             <p>30 ml</p>
                             <p>PHP 800.00</p>
-                            <p><a href="#contactus">Inquire</a></p>
+                            <p><a class="inq" href="#contactus">Inquire</a></p>
                         </div>  
                         <div class="desc-line"> </div>
                         <div class="desc">
@@ -226,16 +228,43 @@
                     <div class="works-reel">
                         <img id="work-field" src="assets/imge/field.png">
                     </div>
-
                 </div>
             </div>
         </div>
-
-
-
-
-
-
+        <div class="info">
+            <div class="div-link" id="contactus"></div>
+            <div class="sub-header"> 
+                Contact Us
+            </div>
+            <div class="con"> 
+                <div class="line"></div>
+                <div class="content-me" style="width: 100%;">
+                    <form>
+                        <div class="contact-sub">
+                            <label>Subject:</label>
+                            <input type="text" name="subject" id="subject">
+                        </div>
+                        <div class="contact-sub">
+                            <label>Concern:</label>
+                            <select name="concern" id="concern">
+                                <option value="select">--Select--</option>
+                                <option value="inquir">Product Price</option>
+                                <option value="inquir">Other Concern</option>
+                            </select>
+                        </div>
+                        <div class="contact-sub">
+                            <label>Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        Copyright © 2024 All Rights Reserved
+    </footer>
 </body>
 </html>

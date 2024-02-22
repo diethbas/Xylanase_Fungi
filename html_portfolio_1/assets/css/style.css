@@ -397,3 +397,15 @@ a.menyu:hover, a.menyu:active {
     margin-top: 35px;
     margin-left: 36px;
 }
+
+a.inq:hover, a.inq:active {
+    background-color: #613659;
+    color: #D3B1C2;
+}
+
+.inq {
+    padding: 5px;
+    border: #211522 solid 1px;
+    font-size: 13px;
+    font-style: italic;
+}

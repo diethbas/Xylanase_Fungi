@@ -116,7 +116,7 @@ a {
     color: #211522;
     font-weight: bold;
     font-style: italic;
-    margin-top: 88px;
+    margin-top: 150px;
 }
 
 .content-text {
@@ -281,6 +281,7 @@ a {
 
 .produ {
     color: white;
+    padding: 7px;
 }
 
 .profile {
@@ -310,6 +311,7 @@ a {
 
 .sub-content {
     text-align: center;
+    line-height: 1.8;
 }
 
 .line-about {
@@ -321,11 +323,12 @@ a {
 }
 
 .work-about {
-    margin-top: 97px;
-    margin-bottom: 40px;
+    margin-top: 39px;
+    margin-bottom: 24px;
     font-size: 25px;
     color: #211522;
     text-align: center;
+    font-style: italic;
 }
 
 footer{
@@ -337,8 +340,10 @@ footer{
 
 #contactus + .sub-header + .con > .content-me {
     padding: 20px;
-    background-color: #211522;
+    background-color: #613659;
     border-radius: 10px;
+    margin-bottom: 118px;
+    margin-top: 50px;
 }
 
 .contact-sub {
@@ -369,4 +374,26 @@ input {
 select {
     width: 213px;
     padding: 5px;
+}
+
+a.produ:hover, a.produ:active {
+    background-color: #613659;
+}
+
+a.menyu:hover, a.menyu:active {
+    background-color: #613659;
+    color: #D3B1C2;
+    
+}
+
+.menyu {
+    padding: 5px;
+}
+
+.sub-header-1 {
+    font-size: 30px;
+    color: #211522;
+    font-style: italic;
+    margin-top: 35px;
+    margin-left: 36px;
 }

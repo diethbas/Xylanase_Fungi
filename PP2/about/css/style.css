@@ -1,0 +1,410 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    background-color: #FFF8F1;
+    background: #FFF8F1;
+}
+
+.about-main {
+    max-width: 1525px;
+    min-width: 100%;
+    min-height: calc(100vh - 30px);
+    margin: 0 auto;
+    box-shadow: 1px -9px 5px 5px #aaa;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background-nav {
+    width: 100%;
+    height: 100px;
+    background-image: url(/diethbas.github.io/PP2/assets/image/background.jpg);
+    background-size: cover;
+    background-position-y: -477px;
+    background-repeat: no-repeat;   
+}
+
+.middle {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D3B1C2;
+    font-size: 12px;
+    border-radius: 49px;
+    margin-top: 3%;
+    margin-left: 31%;
+    font-weight: bold;
+}
+
+.middle nav {
+    width: 20%;
+    text-align: center;
+    border-radius: 49px;
+}
+.middle nav a {
+    margin: 9px 0 !important;
+    display: inline-block;
+    color: #211522;
+    text-decoration: none;
+    text-align: center;
+}
+.middle nav:hover,
+.middle nav.active {
+    background-color: #211522;
+    color: #D3B1C2 !important;
+}
+
+.middle nav:hover a,
+.middle nav.active a {
+    color: #D3B1C2 !important;
+    width: 100%;
+}
+
+.about-title {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #613659;
+    margin-right: 15px;
+}
+
+.about-logo img {
+    width: 150px;
+    margin-top: -7px;
+    margin-bottom: -23px;
+}
+
+.about-title2 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 9px
+}
+
+.about-body {
+    display: flex;
+}
+
+.about-profile {
+    margin-left: 20px;
+    margin-top: 26px;
+    margin-right: 16px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.details    {
+    margin-top: 25px;
+}
+
+.quality-logo img {
+    margin-right: -24px;
+    width: 104px;
+    margin-left: -21px;
+    margin-top: -9px;
+}
+
+.quality-logo {
+    display: flex;
+}
+
+.quality {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #613659;
+    margin-top: 20px;
+}
+
+.line {
+    border-bottom: 3px dotted #211522;
+    width: 50%;
+    margin-left: 12px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+.quality-det2 {
+    font-size: 15px;
+    color: #211522;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.button-1 {
+    height: 28px;
+    width: 120px;
+    margin-right: 13px;
+    background-color: #211522;
+    color: #D3B1C2;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 36px;
+    border: none;
+    position: relative;
+    top: -13%;
+    left: 84px;
+}
+
+.name {
+    font-size: 15px;
+    color: #211522;
+    position: relative;
+    top: -30%;
+    left: 82px;
+}
+
+.name-type{
+    font-size: 12px;
+    color: #613659;
+    position: relative;
+    top: -30%;
+    left: 105px;
+}
+
+footer {
+    height: 42px;
+    font-size: 12px;
+    background-color: #E2D6CF;
+    display: flex;
+    justify-content: center;
+    color: #211522;
+    padding-top: 15px;
+}
+
+.footer-logo img {
+    width: 39px;
+    padding: 1px;
+}
+
+#logo {
+    width: 235px;
+    margin-top: 35px;
+    margin-right: -6px;
+    margin-left: 40px;
+}
+
+/**** addtl**/
+nav #logo{
+    width: 120px;
+    margin: 0;
+}
+
+/* tablet */
+@media screen and (min-width: 0) and (max-width: 992px) {
+    
+    .about-body-mobile {
+        margin-top: 20px;
+    }
+    .about-main {
+        box-shadow: none;
+    }
+
+    .about-body {
+        flex-wrap: wrap;
+    }
+    .circle-div {
+        border-radius: 50%;
+        width: 65vw;
+        height: 65vw;
+        border: 4px dotted #211522;
+        animation: rotate 30s linear infinite;
+        position: absolute;
+    }
+    .types-mobile {
+        position: absolute;
+        z-index: 3;
+    }
+    .types-mobile .type {
+        position: absolute;
+    }
+    .types-mobile img {
+        width: 25vw;    
+    }
+
+    .types-mobile .quality {
+        margin-top: -10vw;
+        margin-left: 22vw;
+        z-index: 20;
+    }
+
+    .types-mobile .premium {
+        margin-left: -3vw;
+        margin-top: 45vw;
+    }
+    .types-mobile .afford {
+        margin-left: 45vw;
+        margin-top: 45vw;
+    }
+    .circle-bg {
+        position: absolute;
+        background-color: white;
+        width: 16vw;
+        height: 16vw;
+        z-index: -1;
+        border-radius: 50%;
+        margin-top: 1.7vw;
+        margin-left: 3.8vw;
+        border: 4px dotted #211522;
+        animation: rotate 30s linear infinite;
+    }
+    .about-profile-mobile {
+        /* animation:moveprofile .5s;
+        animation-fill-mode: backwards; */
+        transition: margin 10s ease;
+        transition: width 0.3s ease-in;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 23%;
+    }
+    .types-mobile:hover + .whole-bg + .circle-div + .about-profile-mobile,
+    .types-mobile:active + .whole-bg + .circle-div + .about-profile-mobile{
+        /* animation:moveprofile .5s;
+        animation-fill-mode: forwards !important; */
+        margin-left: -70vw;
+        margin-top: -7vw;
+        width: 28vw;
+    }
+    .types-mobile:hover + .whole-bg,
+    .types-mobile:active + .whole-bg{
+        display: none;
+    }
+    .whole-bg {
+        width: 65vw;
+        height: 65vw;
+    }
+    .types-mobile:hover + .whole-bg + .circle-div,
+    .types-mobile:active + .whole-bg + .circle-div{
+        border-radius: 10px;
+        animation: none;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .types-mobile:hover .type .circle-bg,
+    .types-mobile:active .type .circle-bg {
+        display: none;
+    }
+    .types-mobile:hover .type:hover .circle-bg,
+    .types-mobile:hover .type:active .circle-,
+    .types-mobile:hover .type:focus .circle-bg,
+    .types-mobile:active .type:hover .circle-bg,
+    .types-mobile:active .type:active .circle-,
+    .types-mobile:active .type:focus .circle-bg,
+    .types-mobile:focus .type:hover .circle-bg,
+    .types-mobile:focus .type:active .circle-,
+    .types-mobile:focus .type:focus .circle-bg,
+    .types-mobile .type:hover .circle-bg,
+    .types-mobile .type:active .circle-,
+    .types-mobile .type:focus .circle-bg {
+        display: block;
+    }
+
+    .types-mobile:hover .type:hover .desc-details,
+    .types-mobile:active .type:active .desc-details {
+        display: block !important;
+    }
+
+    .desc-details {
+        display: none !important;
+        height: 100vw;
+        width: 90vw;
+        position: absolute;
+        margin-left: -36vw;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: normal;
+        color: #613659;
+        margin-top: 7vw;
+    }
+    .premium.type .desc-details{
+        margin-left: -14vw;
+        padding-left: 21vw;
+    }
+    .afford.type .desc-details{
+        margin-left: -50vw;
+        padding-left: 21vw;
+    }
+    .quality.type .desc-details{
+        margin-left: -32vw;
+        padding-left: 21vw;
+    }
+
+    .types-mobile:hover .premium,
+    .types-mobile:active .premium{
+        margin-left: 4vw;
+        margin-top: -10vw;
+    }
+
+    .types-mobile:hover .afford,
+    .types-mobile:active .afford{
+        margin-left: 40vw;
+        margin-top: -10vw;
+    }
+    
+    .about-profile-mobile {
+        width: 23%;
+        transform: translateY(50%);
+        position: absolute;
+    }
+    .about-profile-mobile .about-profile img {
+        width: 100%;
+    }
+
+    .about-profile-details {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-top: -8vw;
+    }
+
+    .about-profile-details > button,
+    .about-profile-details > div {
+        left: 0;
+        margin: auto;
+        font-size: 1vw;
+    }
+
+    .about-profile-details > button {
+        font-size: 1vw;
+        height: 2.5em;
+        margin-top: .75vw;
+        width: 75%;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg); /* Start rotation at 0 degrees */
+        }
+        100% {
+            transform: rotate(360deg); /* End rotation at 360 degrees */
+        }
+    }
+    @keyframes moveprofile {
+        0% {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 23%;
+        }
+        100% {
+            margin-left: -72vw;
+            margin-top: -14vw;
+            width: 28vw;
+        }
+    }
+}

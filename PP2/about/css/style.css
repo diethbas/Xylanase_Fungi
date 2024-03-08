@@ -6,7 +6,13 @@ body, html {
     background-color: #FFF8F1;
     background: #FFF8F1;
 }
-
+.about-body-mobile a,
+.about-body a {
+    text-align: center;
+    text-decoration: none;
+    padding-top: .5vw;
+    z-index: 1000;
+}
 .about-main {
     max-width: 1525px;
     min-width: 100%;
@@ -277,6 +283,7 @@ nav #logo{
         margin-left: -70vw;
         margin-top: -7vw;
         width: 28vw;
+        position: absolute;
     }
     .types-mobile:hover + .whole-bg,
     .types-mobile:active + .whole-bg{
@@ -373,14 +380,14 @@ nav #logo{
         margin-top: -8vw;
     }
 
-    .about-profile-details > button,
+    .about-profile-details > a,
     .about-profile-details > div {
         left: 0;
         margin: auto;
         font-size: 1vw;
     }
 
-    .about-profile-details > button {
+    .about-profile-details > a {
         font-size: 1vw;
         height: 2.5em;
         margin-top: .75vw;

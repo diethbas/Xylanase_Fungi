@@ -101,10 +101,17 @@ body, html {
 .card-body {
     background-color: #C197D2;
 }
+.shop-cards {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
 .card {
     margin-top: 40px;
-    margin-left: 50px;
+    display: flex;
+    width: 20%;
 }
 .card-img-c {
     height: 60%;
@@ -157,5 +164,28 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+    .shop-cards .card {
+        width: 25%;
+    }
 
+    .card-text {
+        font-size: 1.7vw;
+        margin-bottom: 1vw;
+    }
+    .card-img-c {
+        height: 26vw;
+        padding: 1vw;
+    }
+
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+    .shop-cards .card {
+        width: 31%;
+    }
+    .card-img-c {
+        height: 30vw;
+        padding: 1vw;
+    }   
+    
 }

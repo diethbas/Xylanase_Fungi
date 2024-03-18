@@ -2,11 +2,12 @@
 let Items = [];
 let UpdateItem = [];
 
+// EventListener
 document.getElementById("btn-add").addEventListener('click', function() {
     let Id = document.getElementById("txtId").value;
     let Name = document.getElementById("txtName").value;
     let Hours = document.getElementById("txtHour").value;
-
+// ButtonTextCheck
     let btnAdd = document.getElementById("btn-add");    
     if (btnAdd.innerText === "Log Hours") {                
         Items.push([Id, Name, Hours]);
@@ -22,6 +23,7 @@ document.getElementById("btn-add").addEventListener('click', function() {
     document.getElementById("txtHour").value = "";
 });
 
+// empid getindex loop
 function getindex (empid){
     let index = -1;
     for(let x = 0; x < Items.length; x++) {
@@ -31,11 +33,14 @@ function getindex (empid){
     }
     return index;
 }
+
+// remove funtion
 function remove(index) {
     Items.splice(index, 1);
     DrawList();
 }
 
+// edit function
 function edit(index) {
     UpdateItem = [...Items[index]];
     let selectedItemId = UpdateItem[0];
@@ -59,8 +64,8 @@ function DrawList() {
         let empId = "<div class='col-3'>" + Items[x][0] + "</div>";
         let fullName = "<div class='col-3'>" + Items[x][1] + "</div>";
         let hours = "<div class='col-3'>" + Items[x][2] + "</div>";
-        let action = "<button class='btn btn-danger' onclick='remove("+x+")'>Remove</button>";
         let editAction = "<button class='btn btn-warning mr-2' onclick='edit("+x+")'>Edit</button>"; 
+        let action = "<button class='btn btn-danger' onclick='remove("+x+")'>Remove</button>";
         List += "<li class='mt-1 d-flex list-style-none border-bottom pb-1 border-light'>"+ empId + fullName + hours + editAction + action + "</li>";
     }   
     document.getElementById("total").innerHTML = total;

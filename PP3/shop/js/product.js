@@ -40,7 +40,7 @@ let productName =  (nameProduct, price) => {
 }
 
 let getProduct = async () => {
-    let response = await fetch("http://localhost/diethbas.github.io2/PP3/shop/products/shoproducts.json");
+    let response = await fetch("https://diethbas.github.io/PP3/shop/products/shoproducts.json");
     let result = await response.json();
     return result;
 }

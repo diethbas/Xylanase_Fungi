@@ -1,0 +1,35 @@
+{
+"products": [
+{
+    "id": 1,
+    "name": "MYC Agar Powder",
+    "weight": "100 grams",
+    "price": 1000,
+    "image": "./../assets/image/agar.png"
+}
+,
+{
+    "id": 2,
+    "name": "MYC PDA",
+    "weight": "100 grams", 
+    "price": 1200,
+    "image": "./../assets/image/PDA.png"
+}
+,
+{
+    "id": 3,
+    "name": "MYC Yeast Extract",
+    "weight": "100 grams",
+    "price": 950,
+    "image": "./../assets/image/yeast extract.png"
+}
+,
+{
+    "id": 4,
+    "name": "MYC Peptone",
+    "weight": "100 grams",
+    "price": 1000,
+    "image": "./../assets/image/peptone.png"
+}
+]
+}

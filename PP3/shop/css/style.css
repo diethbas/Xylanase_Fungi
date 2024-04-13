@@ -1,0 +1,275 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    background-color: #FFF8F1;
+    background: #FFF8F1;
+}
+
+.about-main {
+    max-width: 1525px;
+    min-width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px -9px 5px 5px #aaa;
+    margin-bottom: 10px;
+    padding-bottom: 45px;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background-nav {
+    width: 100%;
+    height: 114px;
+    background-color: #E2D6CF;
+    background-size: cover;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    
+}
+
+.left-logo {
+    background-image: url(../../assets/image/logo.png);
+}
+.table {
+    tbody, td, tfoot, th, thead, tr {
+        border-style: none !important;
+    }
+
+    button {
+        width: 32px;
+        background: cadetblue;
+        border-radius: 50%;
+        height: 32px;
+        border: 1px solid gray;
+        color: white;
+        margin-left: 10px;
+    }
+}
+.middle {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    border-radius: 49px;
+    margin-top: 3%;
+    margin-left: 31%;
+    font-weight: bold;
+}
+
+.middle nav {
+    width: 20%;
+    text-align: center;
+    border-radius: 49px;
+}
+.middle nav a {
+    margin: 9px 0 !important;
+    display: inline-block;
+    color: #211522;
+    text-decoration: none;
+    text-align: center;
+}
+.middle nav:hover,
+.middle nav.active {
+    background-color: #211522;
+    color: #D3B1C2 !important;
+}
+
+.middle nav:hover a,
+.middle nav.active a {
+    color: #D3B1C2 !important;
+    width: 100%;
+}
+
+.about-title {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #613659;
+    margin-left: 15px;
+}
+
+.about-logo img {
+    width: 150px;
+    margin-top: -10px;
+    margin-bottom: -23px;
+}
+
+.about-title2 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 9px
+}
+
+.card-img-top {
+    background-color: #613659;
+}
+.card-body {
+    background-color: #C197D2;
+}
+.shop-cards {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card {
+    margin-top: 40px;
+    display: flex;
+    width: 20%;
+}
+.card-img-c {
+    height: 60%;
+    padding: 20px;
+}
+
+.card:nth-child(odd),
+.card:nth-child(odd) .card-img-top {
+    background-color: #613659;
+}
+
+.card:nth-child(even),
+.card:nth-child(even) .card-img-top {
+    background-color: #D3B1C2;
+}
+
+.card:nth-child(even) .card-body {
+    background-color: #E2D6CF;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+footer {
+    height: 42px;
+    font-size: 12px;
+    background-color: #E2D6CF;
+    display: flex;
+    justify-content: center;
+    color: #211522;
+    padding-top: 15px;
+}
+
+.footer-logo img {
+    width: 39px;
+    padding: 1px;
+}
+
+.product-action {
+    font-weight: bold;
+}
+
+/* tablet */
+@media screen and (min-width: 0) and (max-width: 992px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+    .shop-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shop-cards .card {
+        width: 25%;
+    }
+
+    .card-text {
+        font-size: 1.7vw;
+        margin-bottom: 1vw;
+    }
+    .card-img-c {
+        height: 26vw;
+        padding: 1vw;
+    }
+
+}
+/* mobile */
+@media screen and (min-width: 0) and (max-width: 576px) {
+    .shop-cards .card {
+        width: 31%;
+    }
+    .card-img-c {
+        height: 30vw;
+        padding: 1vw;
+    }   
+    
+}
+
+.addToCartbtn {
+    border: none;
+    position: relative;
+    background: none;
+    margin: auto;
+    display: block;
+}
+
+.mdl-logo {
+    width: 100px;
+    margin-right: 84px;
+}
+
+.modal-header {
+    background-color: #D3B1C2;
+}
+
+.button-qoute {
+    background-color: #E2D6CF;
+    border: none;
+    height: 37px;
+    border-radius: 6px;
+}
+
+.cred {
+    display: block;
+}
+
+.left-cred {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.left2-cred {
+    font-size: 11px;
+}
+
+.mdl-content {
+    display: flex;
+}
+
+.mdl-item {
+    margin-right: 90px;
+}
+
+.mdl-line {
+    border: 1px solid black;
+}
+
+.mdl-gtotal {
+    display: flex;
+}
+
+.mdl-price {
+    margin-left: 39%;
+}
+
+.mdl-gtotal {
+    margin-top: 25px;
+    color: #613659;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    display: block;
+}

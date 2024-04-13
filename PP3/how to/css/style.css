@@ -1,0 +1,181 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    background-color: #FFF8F1;
+    background: #FFF8F1;
+}
+
+.howto-main {
+    max-width: 1525px;
+    min-width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px -9px 5px 5px #aaa;
+    margin-bottom: 10px;
+    padding-bottom: 45px;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background-nav {
+    width: 100%;
+    height: 100px;
+    background-image: url(./../../assets/image/navhow.jpg);
+    background-size: cover;
+    background-position-y: 14%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.middle {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D3B1C2;
+    font-size: 12px;
+    border-radius: 49px;
+    margin-top: 3%;
+    margin-left: 31%;
+    font-weight: bold;
+}
+
+.middle nav {
+    width: 20%;
+    text-align: center;
+    border-radius: 49px;
+}
+.middle nav a {
+    margin: 9px 0 !important;
+    display: inline-block;
+    color: #211522;
+    text-decoration: none;
+    text-align: center;
+}
+.middle nav:hover,
+.middle nav.active {
+    background-color: #211522;
+    color: #D3B1C2 !important;
+}
+
+.middle nav:hover a,
+.middle nav.active a {
+    color: #D3B1C2 !important;
+    width: 100%;
+}
+
+
+.howto-title {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.howto-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #613659;
+    margin-left: 15px;
+}
+
+.howto-logo img {
+    width: 150px;
+    margin-top: -10px;
+    margin-bottom: -23px;
+}
+
+.howto-title2 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 9px
+}
+
+footer {
+    height: 42px;
+    font-size: 12px;
+    background-color: #E2D6CF;
+    display: flex;
+    justify-content: center;
+    color: #211522;
+    padding-top: 15px;
+}
+
+.footer-logo img {
+    width: 39px;
+    padding: 1px;
+}
+
+.howto-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.howto-image img {
+    margin-right: -10px;
+    width: 290px;
+    margin-left: 38px;
+    margin-top: 13px;
+}
+
+.howto-details {
+    margin-left: 23px;
+    margin-right: 23px
+}
+
+.howto-unitname {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #C197D2;
+    margin-top: 9px;
+}
+
+.howto-lesson {
+    font-size: 25px;
+    font-weight: bold;
+    color: #211522;
+}
+
+.howto-date {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #211522;
+}
+
+.howto-info {
+    font-size: 15px;
+    color: #211522;
+    text-align: justify;
+}
+
+.button-1 {
+    height: 20px;
+    width: 110px;
+    background-color: #211522;
+    color: #D3B1C2;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 36px;
+    border: none;
+    position: relative;
+    left: 0px; 
+}
+/* tablet */
+@media screen and (min-width: 0) and (max-width: 992px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+    .howto-info {
+        font-size: 13px;
+    }
+    .howto-lesson {
+        font-size: 20px;
+    }
+}

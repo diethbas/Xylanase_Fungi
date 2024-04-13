@@ -17,14 +17,17 @@ let getEmailHtml = (cart, cust) => {
     });
     return `
     <html>
-    <body>
+    <body style="
+        font-family: sans-serif;
+        font-size: 16px;
+    ">
     <div style="
         max-width: 800px;
         margin: auto;
         font-family: sans-serif;
         margin-top: 20px;
     ">
-        <p>Hi,</p>
+        <p>Good day! Admin,</p>
 
         <p><b>${cust.firstName} ${cust.lastName}</b> is requresting for quotation here are the customer details:</p>
         <table style="
@@ -37,7 +40,7 @@ let getEmailHtml = (cart, cust) => {
                     ">Email address:</td>
                     <td>${cust.email}</td>
                 </tr>
-                <tr
+                <tr>
                     <td style="
                         font-weight: bold;
                     ">Contact number:</td>
@@ -47,7 +50,7 @@ let getEmailHtml = (cart, cust) => {
                     <td style="
                         font-weight: bold;
                     ">Deliver address:</td>
-                    <td><a href="https://www.google.com/maps/search/?api=1&query=${cust.pos.lat}}%2C${cust.pos.lng}">${cust.deladdress}</a></td>
+                    <td><a href="https://www.google.com/maps/search/?api=1&query=${cust.pos.lat}%2C${cust.pos.lng}">${cust.deladdress}</a></td>
                 </tr>
             </tbody>
         </table>
@@ -77,14 +80,14 @@ let getEmailHtml = (cart, cust) => {
                 text-align: right;
                 line-height: 18px;
             ">
-                <span style="
+                <div style="
                     width: 100%;
                     text-align: right;
-                ">123 Main Street, Metro Manila, Philippines, Mycro Inc.</span>
-                <span style="
+                ">123 Main Street, Metro Manila, Philippines, Mycro Inc.</div>
+                <div style="
                     width: 100%;
                     text-align: right;
-                ">myrcro.customer.service@gmail.com | +6395314794236</span>
+                ">myrcro.customer.service@gmail.com | +6395314794236</div>
             </div>
         </div>
         <div class="modal-body" id="modalBody" style="

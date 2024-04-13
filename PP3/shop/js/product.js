@@ -225,64 +225,31 @@ let validate = () => {
     }
     return true;
 }
+
+
 let sendEmail = () => {
     if (!validate()){
         return;
     }
-
-    const url = 'https://api.mailjet.com/v3.1/send';
     const htmlContent = getEmailHtml(cart, cust);
-    // const options = {
-    //     method: 'POST',
-    //     headers: {
-    //         'content-type': 'application/json',
-    //         'X-RapidAPI-Key': '5ea957b8eamsh743b28359aa6001p134456jsn38a6b97ad5f5',
-    //         'X-RapidAPI-Host': 'rapidmail.p.rapidapi.com'
-    //     },
-    //     body: {
-    //         ishtml: true,
-    //         sendto: 'aishaish2724@gmail.com',
-    //         name: 'noreply',
-    //         replyTo: 'noreply@gmail.com',
-    //         title: `${cust.firstName} ${cust.lastName} is asking for the quote`,
-    //         body: htmlContent
-    //     }
-    // };
-
-    const data = JSON.stringify({
-        "Messages": [{
-        "From": {"Email": "noreply@gmail.com", "Name": "noreply"},
-        "To": [{"Email": "drivasgearra@gmail.com", "Name": "Admin"}],
-        "Subject": `${cust.firstName} ${cust.lastName} is asking for the quote`,
-        "HtmlPart": htmlContent
-        }]
-    });
-
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Referer': 'https://diethbas.github.io',
-            'Authorization': 'Basic ' + btoa('7ddeef9a6670c2c18e4ebcc38404ceb3'+":" +'bc4c09950bb9fc170f604cce46c576cd')
+    var templateParams = {
+        body: htmlContent,
+        subject: `${cust.firstName} ${cust.lastName} is asking for the quote`,
+      };
+      
+    emailjs.send('service_hr5xfh5', 'template_ld0wkcx', templateParams).then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
         },
-        body: data,
-    };
-    console.log(options);
+        (error) => {
+            console.log('FAILED...', error);
+        },
+    );
+
 
     var myModalEl = document.getElementById('filloutModal')
     var modal = bootstrap.Modal.getInstance(myModalEl)
     modal.hide();
-
-    (async() => {
-        try {
-            const response = await fetch(url, options);
-            const result = await response.text();
-            console.log(result);
-        } catch (error) {
-            console.error(error);
-        }
-        alert('Your request has been successfully sent. Please wait for our call in 2-3 days');
-    })();
 }
 
 let firstNameTxt = document.getElementById('txtfname');

@@ -240,6 +240,7 @@ let sendEmail = () => {
     emailjs.send('service_hr5xfh5', 'template_ld0wkcx', templateParams).then(
         (response) => {
             console.log('SUCCESS!', response.status, response.text);
+            alert('Your request has been successfully sent. Please wait for our call in 2-3 days');
         },
         (error) => {
             console.log('FAILED...', error);
@@ -250,6 +251,13 @@ let sendEmail = () => {
     var myModalEl = document.getElementById('filloutModal')
     var modal = bootstrap.Modal.getInstance(myModalEl)
     modal.hide();
+
+    cart = [];
+    cust = new person();
+    firstNameTxt.value = "";
+    lastNameTxt.value = "";
+    contactTxt.value = "";
+    emailTxt.value = "";
 }
 
 let firstNameTxt = document.getElementById('txtfname');

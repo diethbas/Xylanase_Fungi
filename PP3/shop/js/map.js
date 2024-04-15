@@ -1,7 +1,4 @@
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
+// google map API
 let map, infoWindow;
 
 async function initMap() {
@@ -30,14 +27,14 @@ async function initMap() {
     title: "This marker is draggable.",
   });
 
-  //@ts-ignore
+  
   placeAutocomplete.id = "del-address";
 
   placeAutocomplete.addEventListener('gmp-placeselect', async ({ place }) => {
     await place.fetchFields({
         fields: ["displayName", "formattedAddress", "location"],
       });
-    draggableMarker.position = place.location;
+    draggableMarker.positionvg = place.location;
     draggableMarker.title = place.formattedAddress;
     cust.deladdress = place.formattedAddress;
     cust.pos = {
@@ -45,10 +42,6 @@ async function initMap() {
         lng: place.location.lng()
     };
     map.setCenter(place.location);
-  });
-
-  placeAutocomplete.addEventListener('change', function (test) {
-    console.log(test);
   });
 
   draggableMarker.addListener("dragend", (event) => {
@@ -61,14 +54,13 @@ async function initMap() {
 
   const card = document.getElementById("mapSearch");
 
-  //@ts-ignore
+  
   card.appendChild(placeAutocomplete);
 
 
   const quoteBtn = document.getElementById("quote");
 
   quoteBtn.addEventListener("click", () => {
-    // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {

@@ -39,14 +39,15 @@ let productName =  (nameProduct, price) => {
     return "Your order is " + nameProduct + "at" + price;
 }
 
+// async function fetches data from JSON
 let getProduct = async () => {
     let response = await fetch("https://diethbas.github.io/PP3/shop/products/shoproducts.json");
     let result = await response.json();
     return result;
 }
 
+// add product to cart
 let addToCart = (id) => {
-    // syntax of array.find((element) => { condition );
     const productSelected = productList.find((element) => element.id == id);
     const isInCart = cart.find((element) => +element.productId == productSelected.id);
     
@@ -70,6 +71,7 @@ let addToCart = (id) => {
     showModal();
 }
 
+// increment quantity in the cart
 let incCartItem = (productId) => {
     var cartItem = cart.find((element) => element.productId == productId);
     if (cartItem) {
@@ -82,6 +84,7 @@ let incCartItem = (productId) => {
     showModal();
 };
 
+// decrementing the qty of product in the cart
 let decCartItem = (productId) => {
     var cartItem = cart.find((element) => element.productId == productId);
     let movingToZero = false;
@@ -106,6 +109,7 @@ let decCartItem = (productId) => {
     showModal();
 };
 
+// modal
 let showModal = () => {
     let cartCount = cart.length;
     let modalBody = document.getElementById("modalBody");
@@ -127,6 +131,7 @@ let showModal = () => {
         `;
     });
 
+
     let cartTableList = `
         <table class="table">
             <tbody>
@@ -144,7 +149,7 @@ let showModal = () => {
                 <td class="w-50 fw-bold text-end">
                 PHP ${parseFloat(totalAmount).toFixed(2)}
                 </td>
-            </tr>
+            </tr>productItem
             </tbody>
         </table>
         `;
@@ -164,7 +169,8 @@ let showModal = () => {
     `;
 }
 
-let addCardProduct = (productItem) => {
+// card
+let addCardProduct = () => {
     let shopList = document.getElementById("shopList");
     shopList.innerHTML += `
     <div class="card" data-id=${productItem.id}>
@@ -198,6 +204,8 @@ let addCardProduct = (productItem) => {
         });
     }
 })();
+
+// validate info for email
 let validate = () => {
     if (!cust.firstName || cust.firstName == ''){
         alert('Please enter your first name');
@@ -226,7 +234,7 @@ let validate = () => {
     return true;
 }
 
-
+// send email
 let sendEmail = () => {
     if (!validate()){
         return;
@@ -234,6 +242,7 @@ let sendEmail = () => {
     const htmlContent = getEmailHtml(cart, cust);
     var templateParams = {
         body: htmlContent,
+        cc_email: cust.email,
         subject: `${cust.firstName} ${cust.lastName} is asking for the quote`,
       };
       

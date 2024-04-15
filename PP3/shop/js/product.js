@@ -149,7 +149,7 @@ let showModal = () => {
                 <td class="w-50 fw-bold text-end">
                 PHP ${parseFloat(totalAmount).toFixed(2)}
                 </td>
-            </tr>productItem
+            </tr>
             </tbody>
         </table>
         `;
@@ -170,7 +170,7 @@ let showModal = () => {
 }
 
 // card
-let addCardProduct = () => {
+let addCardProduct = (productItem) => {
     let shopList = document.getElementById("shopList");
     shopList.innerHTML += `
     <div class="card" data-id=${productItem.id}>

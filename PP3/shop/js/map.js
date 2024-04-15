@@ -34,7 +34,7 @@ async function initMap() {
     await place.fetchFields({
         fields: ["displayName", "formattedAddress", "location"],
       });
-    draggableMarker.positionvg = place.location;
+    draggableMarker.position = place.location;
     draggableMarker.title = place.formattedAddress;
     cust.deladdress = place.formattedAddress;
     cust.pos = {

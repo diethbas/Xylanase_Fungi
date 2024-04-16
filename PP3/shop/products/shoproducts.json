@@ -31,5 +31,37 @@
     "price": 1000,
     "image": "./../assets/image/peptone.png"
 }
+,
+{
+    "id": 5,
+    "name": "MYC Peptone",
+    "weight": "300 grams",
+    "price": 1899,
+    "image": "./../assets/image/peptone.png"
+}
+,
+{
+    "id": 6,
+    "name": "MYC Nutrient Broth",
+    "weight": "500 grams",
+    "price": 1899,
+    "image": "./../assets/image/nutrient.png"
+}
+,
+{
+    "id": 7,
+    "name": "MYC Sabouraud Dextrose Agar",
+    "weight": "500 grams",
+    "price": 1299,
+    "image": "./../assets/image/Sabouraud.png"
+}
+,
+{
+    "id": 8,
+    "name": "MYC Tryptic Soy Agar",
+    "weight": "250 grams",
+    "price": 4000,
+    "image": "./../assets/image/tryptic.png"
+}
 ]
 }

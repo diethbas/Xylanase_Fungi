@@ -54,7 +54,7 @@ body, html {
     width: 35%;
     display: flex;
     justify-content: space-around;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 49px;
     margin-top: 3%;
     margin-left: 31%;
@@ -126,7 +126,9 @@ body, html {
 .card {
     margin-top: 40px;
     display: flex;
-    width: 20%;
+    width: 18%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .card-img-c {
     height: 60%;
@@ -272,4 +274,9 @@ footer {
     height: 200px;
     background-color: red;
     display: block;
+}
+
+.left-logo {
+    background-image: url(../../assets/image/logo.png);
+    width: 10px;
 }

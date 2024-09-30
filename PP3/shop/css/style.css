@@ -7,7 +7,7 @@ body, html {
     background: #FFF8F1;
 }
 
-.about-main {
+.shop-main {
     max-width: 1525px;
     min-width: 100%;
     margin: 0 auto;
@@ -85,26 +85,26 @@ body, html {
     width: 100%;
 }
 
-.about-title {
+.shop-title {
     margin-top: 23px;
     display: flex;
     justify-content: center;
 }
 
-.about-title1 {
+.shop-title1 {
     font-size: 30px;
     font-weight: bold;
     color: #613659;
     margin-left: 15px;
 }
 
-.about-logo img {
+.shop-logo img {
     width: 150px;
     margin-top: -10px;
     margin-bottom: -23px;
 }
 
-.about-title2 {
+.shop-title2 {
     text-align: center;
     font-size: 12px;
     margin-top: 9px

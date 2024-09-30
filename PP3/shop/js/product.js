@@ -289,5 +289,3 @@ contactTxt.addEventListener('input', function(event) {
 emailTxt.addEventListener('input', function(event) {
     cust.email = emailTxt.value;
 });
-
-
